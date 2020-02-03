@@ -6,7 +6,7 @@ wget https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 yum install install mysql-server mysql-client -y 
 
 Allow firewall
-firewall-cmd --permanent --add-port=3306
+firewall-cmd --permanent --add-port=3306/tcp
 
 Disable SElinux
 setenforce 0

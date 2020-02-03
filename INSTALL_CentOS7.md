@@ -7,6 +7,7 @@ yum install install mysql-server mysql-client -y
 
 Allow firewall
 firewall-cmd --permanent --add-port=3306/tcp
+firewall-cmd --reload
 
 Disable SElinux
 setenforce 0
